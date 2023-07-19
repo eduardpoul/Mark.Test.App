@@ -18,6 +18,7 @@
       <PackageReference Include="protobuf-net.Grpc.ClientFactory" Version="1.1.1" />
       <PackageReference Include="protobuf-net.Grpc.Reflection" Version="1.1.1" />
       <PackageReference Include="protobuf-net.Reflection" Version="3.2.12" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
       <PackageReference Include="System.ServiceModel.Primitives" Version="6.0.0" />
     </ItemGroup>
 
@@ -25,8 +26,6 @@
       <ProjectReference Include="..\TestApp.Contracts\TestApp.Contracts.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Controllers\" />
-    </ItemGroup>
+    <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
 
 </Project>

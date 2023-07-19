@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using ProtoBuf.Grpc;
 using TestApp.Contracts.Models;
 using TestApp.Database;
 
@@ -26,7 +27,8 @@ public class ProductService : IProductService
         {
             Id = z.Id,
             Name = z.Name,
-            Description = z.Description
+            Description = z.Description,
+            Price = z.Price
         }).ToList();
     }
 }

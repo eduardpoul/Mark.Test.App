@@ -14,7 +14,7 @@ public class ProductGrpcService : IProductsGrpcContract
     {
         _productService = productService;
     }
-    
+
     public async Task<List<ProductPc>> GetProductsAsync(CallContext callContext = default)
     {
         return await _productService.GetProductsAsync(callContext.CancellationToken);

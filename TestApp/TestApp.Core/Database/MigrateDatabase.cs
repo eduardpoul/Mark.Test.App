@@ -10,7 +10,6 @@ public static class SetupDatabase
         {
             var context = scope.ServiceProvider.GetRequiredService<StoreDbContext>();
             context.Database.Migrate();
-
         }
 
         return serviceProvider;

@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Web;
 using TestApp.Contracts;
 
 var builder = WebApplication.CreateBuilder(args);
