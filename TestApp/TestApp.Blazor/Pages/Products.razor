@@ -1,0 +1,30 @@
+﻿<PageTitle>Products</PageTitle>
+
+<h1>Products</h1>
+
+@if (ProductsList == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in ProductsList)
+            {
+                <tr>
+                    <td>@product.Id</td>
+                    <td>@product.Name</td>
+                    <td>@product.Description</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
